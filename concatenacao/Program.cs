@@ -25,3 +25,33 @@ Console.WriteLineparse("A variavel valorTexto e do tipo: " + valorTexto.GetType(
 int numero = int.Parse(valorTexto);
 Console.WriteLineparse(numero);
 Console.WriteLineparse("A variavel numeroParse e do tipo: " + numero.GetType());
+
+// Cast/Casting (Conversao de um numero do tipo string para int, float ou double usando Convert)
+string valorEmTexto = "100";
+Console.WriteLine("Valor da variavél String: " + valorEmTexto);
+Console.WriteLine("A variável valorTexto é do tipo: " + valorEmTexto.GetType());
+
+int numeroConvertido = numeroConvertido.ToInt32(valorEmTexto);
+Console.WriteLine(numeroConvertido);
+Console.WriteLine("Após conversão a variavél numeroConvertido é do tipo: " + numeroConvertido.GetType());
+
+// Convert Qualquer Tipo para String com ToString()
+int numero = 123;
+Console.WriteLine(numero.GetType());
+
+string numeroComoString = numero.ToString();
+Console.WriteLine(numeroComoString.GetType());
+
+// Personalização de Formatação para data e hora
+DataTime dataAtual = DateTime.Now;
+Console.WriteLine(dataAtual);
+
+string dataFormatada = dataAtual.ToString("dd/MM/yyyy");
+Console.WriteLine(dataFormatada);
+
+string dataFormatada = dataAtual.ToString("HH:mm:ss");
+Console.WriteLine(dataHoraFormatada);
+
+// Metodo ToString - Interpolção de string
+double preco = 29.99;
+Console.WriteLine
