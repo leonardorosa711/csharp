@@ -54,4 +54,14 @@ Console.WriteLine(dataHoraFormatada);
 
 // Metodo ToString - Interpolção de string
 double preco = 29.99;
-Console.WriteLine
+Console.WriteLine($"O preço é: {preco.ToString("C2")}");
+
+Console.WriteLine($"O preço é: {preco1.ToString("C2")}");
+
+// Formatacao de acordo com a localizacao (using System.Globalization)
+decimal valor = 1234.56m;
+string valourUS = valor.ToString("C", new System.Globalization.CultureInfo("en-US"));
+Console.WriteLine(valorUS);
+
+string valorBR = valor.ToString("C", new System.Globalization.CultureInfo("pt-BR"));
+Console.WriteLine(valorBR);
